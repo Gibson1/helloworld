@@ -39,6 +39,10 @@
         <action name="helloworld2" class="cn.itcast.action.HelloWorldAction" method="execute">
             <result name="success">/WEB-INF/page/hello.jsp</result>
         </action>
+        
+        <action name="addUI">
+        	<result>/WEB-INF/page/employeeAdd.jsp</result>
+        </action>
     </package>
     
     <package name="my" namespace="/test" extends="struts-default">
@@ -46,6 +50,7 @@
         <action name="helloworld1" class="cn.itcast.action.HelloWorldAction" method="execute">
             <result name="success">/WEB-INF/page/hello.jsp</result>
         </action>
+        
     </package>
 
 </struts>
