@@ -8,7 +8,7 @@ public class HelloWorldAction {
 	}
 
 	public String execute() {
-		msg = "�ҵĵ�һ��strutsӦ�ã�";
+		msg = "这是我第一个struts2应用！";
 		return "success";
 	}
 }
