@@ -7,8 +7,8 @@
 <title>My JSP 'employeeAdd.jsp'</title>
 </head>
 <body>
-	<form action="xxx">
-		姓名：<input type="text" name="xxx">
+	<form action="helloworld1">
+		姓名：<input type="text" name="xm">
 	</form>
 </body>
 </html>
