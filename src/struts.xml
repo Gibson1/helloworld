@@ -51,6 +51,10 @@
             <result name="success">/WEB-INF/page/hello.jsp</result>
         </action>
         
+        <action name="redirect">
+        	<result type="redirect">/employeeAdd2.jsp</result>
+        </action>
+        
     </package>
 
 </struts>
