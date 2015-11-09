@@ -7,8 +7,10 @@
 <title>My JSP 'employeeAdd.jsp'</title>
 </head>
 <body>
+
 	<form action="test/helloworld1">
 		姓名：<input type="text" name="xm">
 	</form>
+	<br/>${message}<br/>${xm}
 </body>
 </html>

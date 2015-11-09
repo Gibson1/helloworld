@@ -51,8 +51,8 @@
             <result name="success">/WEB-INF/page/hello.jsp</result>
         </action>
         
-        <action name="redirect">
-        	<result type="redirect">/employeeAdd2.jsp</result>
+        <action name="redirect" class="cn.itcast.action.HelloWorldAction" method="execute">
+        	<result type="redirect">/employeeAdd2.jsp?username=${username}</result>
         </action>
         
     </package>

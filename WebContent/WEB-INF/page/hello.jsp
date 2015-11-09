@@ -8,5 +8,8 @@
 </head>
 <body>
 ${message }
+<br/>
+${xm}
+
 </body>
 </html>
