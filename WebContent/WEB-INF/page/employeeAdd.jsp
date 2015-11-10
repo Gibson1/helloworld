@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<form action="test/helloworld1">
+	<form action="test/helloworld1.do">
 		姓名：<input type="text" name="xm">
 	</form>
 	<br/>${message}<br/>${xm}

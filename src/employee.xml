@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<!-- Add packages here -->
+	<package name="base" namespace="" extends="struts-default">
+		<global-results>
+			<result name="message">/WEB-INF/page/message.jsp</result>
+		</global-results>
+
+		<action name="helloworld2" class="cn.itcast.action.HelloWorldAction"
+			method="execute">
+			<param name="xm">Test</param>
+			<result name="success">/WEB-INF/page/hello.jsp</result>
+		</action>
+
+		<action name="addUI">
+			<result>/WEB-INF/page/employeeAdd.jsp</result>
+		</action>
+	</package>
+	<package name="other" namespace="/employee" extends="base">
+		<action name="manage" class="cn.itcast.action.HelloWorldAction"
+			method="display">
+		</action>
+		<action name="xxx">
+			<result>/WEB-INF/page/hello.jsp</result>
+		</action>
+	</package>
+
+</struts>

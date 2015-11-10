@@ -8,7 +8,7 @@
 </head>
 <body>
 	${param.username }
-	<form action="test/helloworld1">
+	<form action="test/helloworld1.do">
 		姓名：<input type="text" name="xm" value="">
 	</form>
 	<%= URLDecoder.decode(new String(request.getParameter("username").getBytes("UTF-8"),"UTF-8"),"UTF-8") %>

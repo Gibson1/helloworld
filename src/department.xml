@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<!-- <constant name="struts.enable.DynamicMethodInvocation" value="false" 
+		/> <constant name="struts.devMode" value="true" /> <package name="default" 
+		namespace="/" extends="struts-default"> <default-action-ref name="index" 
+		/> <global-results> <result name="error">/WEB-INF/jsp/error.jsp</result> 
+		</global-results> <global-exception-mappings> <exception-mapping exception="java.lang.Exception" 
+		result="error"/> </global-exception-mappings> <action name="index"> <result 
+		type="redirectAction"> <param name="actionName">HelloWorld</param> <param 
+		name="namespace">/example</param> </result> </action> </package> <include 
+		file="example.xml"/> -->
+	<!-- Add packages here -->
+
+	<package name="my" namespace="/test" extends="base">
+
+		<action name="manage" class="cn.itcast.action.HelloWorldAction"
+			method="display">
+		</action>
+
+		<action name="helloworld1" class="cn.itcast.action.HelloWorldAction"
+			method="execute">
+			<result name="success">/WEB-INF/page/hello.jsp</result>
+		</action>
+
+		<action name="redirect" class="cn.itcast.action.HelloWorldAction"
+			method="execute">
+			<result type="redirect">/employeeAdd2.jsp?username=${username}</result>
+		</action>
+
+		<action name="redirectAction">
+			<result type="redirectAction">
+				<param name="actionName">xxx</param>
+				<param name="namespace">/employee</param>
+			</result>
+		</action>
+
+		<action name="plainTextRoot">
+			<result type="plainText">
+				<param name="location">/index.jsp</param>
+				<param name="charSet">UTF-8</param>
+			</result>
+		</action>
+		<action name="plainTextpage">
+			<result type="plainText">/WEB-INF/page/hello.jsp</result>
+		</action>
+
+	</package>
+
+</struts>

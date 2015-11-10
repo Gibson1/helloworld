@@ -18,65 +18,7 @@
 
 	<constant name="struts.action.extension" value="do,action" />
 
-	<!-- default package -->
-	<package name="base" namespace="" extends="struts-default">
-		<global-results>
-			<result name="message">/WEB-INF/page/message.jsp</result>
-		</global-results>
-
-		<action name="helloworld2" class="cn.itcast.action.HelloWorldAction"
-			method="execute">
-			<param name="xm">Test</param>
-			<result name="success">/WEB-INF/page/hello.jsp</result>
-		</action>
-
-		<action name="addUI">
-			<result>/WEB-INF/page/employeeAdd.jsp</result>
-		</action>
-	</package>
-
-	<package name="my" namespace="/test" extends="base">
-
-		<action name="manage" class="cn.itcast.action.HelloWorldAction"
-			method="display">
-		</action>
-
-		<action name="helloworld1" class="cn.itcast.action.HelloWorldAction"
-			method="execute">
-			<result name="success">/WEB-INF/page/hello.jsp</result>
-		</action>
-
-		<action name="redirect" class="cn.itcast.action.HelloWorldAction"
-			method="execute">
-			<result type="redirect">/employeeAdd2.jsp?username=${username}</result>
-		</action>
-
-		<action name="redirectAction">
-			<result type="redirectAction">
-				<param name="actionName">xxx</param>
-				<param name="namespace">/test/employee</param>
-			</result>
-		</action>
-
-		<action name="plainTextRoot">
-			<result type="plainText">
-				<param name="location">/index.jsp</param>
-				<param name="charSet">UTF-8</param>
-			</result>
-		</action>
-		<action name="plainTextpage">
-			<result type="plainText">/WEB-INF/page/hello.jsp</result>
-		</action>
-
-	</package>
-
-	<package name="other" namespace="/test/employee" extends="base">
-		<action name="manage" class="cn.itcast.action.HelloWorldAction"
-			method="display">
-		</action>
-		<action name="xxx">
-			<result>/WEB-INF/page/hello.jsp</result>
-		</action>
-	</package>
+	<include file="department.xml"></include>
+	<include file="employee.xml"></include>
 
 </struts>
