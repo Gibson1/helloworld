@@ -24,6 +24,7 @@
 
 		<action name="helloworld2" class="cn.itcast.action.HelloWorldAction"
 			method="execute">
+			<param name="xm">Test</param>
 			<result name="success">/WEB-INF/page/hello.jsp</result>
 		</action>
 
