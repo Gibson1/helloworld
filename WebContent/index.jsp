@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Struts2Demo</title>
+<title>Struts2Demo Index</title>
 </head>
 <body>
 <%=new Date() %>

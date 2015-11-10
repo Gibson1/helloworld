@@ -4,15 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Struts2Demo</title>
+<title>Struts2Demo Message</title>
 </head>
 <body>
-<%=new Date() %>
-<br/>
-${message }
-<br/>
-${xm}
-<br/>
-吉布森 中国
+	信息页面
 </body>
 </html>

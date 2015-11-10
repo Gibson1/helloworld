@@ -46,4 +46,9 @@ public class HelloWorldAction {
 		System.out.println("xm:"+xm);
 		return "success";
 	}
+	
+	public String display() {
+		return "message";
+	}
+	
 }
