@@ -16,6 +16,8 @@
 		file="example.xml"/> -->
 	<!-- Add packages here -->
 
+	<constant name="struts.action.extension" value="do,action" />
+
 	<!-- default package -->
 	<package name="base" namespace="" extends="struts-default">
 		<global-results>
