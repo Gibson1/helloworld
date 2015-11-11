@@ -48,7 +48,12 @@ public class HelloWorldAction {
 	}
 	
 	public String display() {
+		msg="动态方法调用display";
 		return "message";
 	}
 	
+	public String addUI(){
+		msg="动态方法调用addUI";
+		return "message";
+	}
 }

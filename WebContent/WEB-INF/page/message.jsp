@@ -8,5 +8,6 @@
 </head>
 <body>
 	信息页面
+	${message }
 </body>
 </html>
