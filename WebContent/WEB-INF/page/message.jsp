@@ -8,6 +8,11 @@
 </head>
 <body>
 	信息页面
+	<br/>
 	${message }
+	<br/>
+	id=${person.id }
+	<br/>
+	name=${person.name }
 </body>
 </html>

@@ -14,5 +14,10 @@ ${message }
 ${xm}
 <br/>
 吉布森 中国
+<form action="test/manage.do" method="post">
+	id:<input type="text" name="person.id"><br/>
+	name:<input type="text" name="person.name"><br/>
+	<input type="submit" value="submit">
+</form>
 </body>
 </html>
