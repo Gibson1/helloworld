@@ -2,6 +2,7 @@ package cn.itcast.action;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.util.Date;
 
 import cn.itcast.bean.Person;
 
@@ -11,6 +12,15 @@ public class HelloWorldAction {
 	private String username;
 	private int id;
 	private String name;
+	private Date birthday;
+
+	public Date getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
+	}
 
 	public Person getPerson() {
 		return person;

@@ -14,5 +14,7 @@
 	id=${person.id }
 	<br/>
 	name=${person.name }
+	<br/>
+	birthday=${birthday }
 </body>
 </html>
